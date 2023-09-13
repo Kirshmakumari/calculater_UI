@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="../CSS/calculator.css" type="text/css">
+</head>
+
+<body>
+    <div id="maindiv">
+        <div id="div2">
+            <span id="time"></span>
+            <button id="empty"></button>
+            <button id="round"></button>
+            <button id="btry">iiiiiiiiiiiii</button>
+        </div>
+        <input type="text" id="calculator" value="" />
+        <div class="flex">
+            <div>
+                <button class="bold" onclick="clean()">AC</button>
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('0')">0</button>
+            </div>
+            <div>
+                <button class="bold" onclick="insert('/')">/</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('2')">2</button>
+                <button class="bold" onclick="insert('')">.</button>
+            </div>
+            <div>
+                <button class="bold" onclick="insert('%')">%</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('3')">3</button>
+                <button class="bold" onclick="insert('+')">+</button>
+            </div>
+            <div>
+                <button class="bold" onclick=insert"('/')">/</button>
+                <button class="bold" onclick="insert('*')">*</button>
+                <button class="bold" onclick="insert('-')">-</button>
+                <button class="equal" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var x = document.getElementById("calculator");
+    function insert(gum) {
+        document.getElementById("calculator").value = document.getElementById("calculator").value + gum
+    }
+    function equal() {
+        x.value = eval(x.value)
+    }
+    function clean() {
+        x.value = ""
+    }
+    var date = new Date;
+    var hour = date.getHours();
+    var mint = date.getMinutes();
+    console.log(hour, mint)
+    document.getElementById("time").innerHTML = hour + ":" + mint;
+</script>
+
+</html>

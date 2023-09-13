@@ -1,0 +1,116 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+#maindiv {
+    margin: 250px;
+    margin-top: 90px;
+    box-shadow: 5px 6px 5px rgb(156, 156, 156);
+    border-radius: 20px;
+    border: 2px solid rgb(185, 183, 183);
+    width: 170px;
+    height: 290px;
+    padding-left: 8px;
+}
+
+#div2 {
+    display: flex;
+    margin-bottom: 13px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#time {
+    color: rgba(0, 0, 0, 0.787);
+    font-weight: bolder;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+#empty {
+    display: inline;
+    background-color: black;
+    border: 1px solid white;
+    margin-left: 40px;
+    padding-left: 20px;
+    box-shadow: none;
+}
+
+#round {
+    display: inline;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: none;
+    width: 1px;
+    height: 5px;
+    padding: 2px;
+}
+
+#btry {
+    display: inline;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 3px;
+    border-radius: 1px;
+    width: 15px;
+    color: black;
+    padding-left: 0%;
+    padding: 0%;
+    margin-left: 20px;
+}
+
+input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    border: 2px solid rgb(206, 206, 206);
+    width: 150px;
+    height: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.698);
+}
+
+.flex {
+    display: flex;
+}
+
+button {
+    display: block;
+    width: 25px;
+    margin: 7px;
+    background-color: rgba(169, 169, 169, 0.102);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    border: 2px solid rgba(220, 220, 220, 0.698);
+    color: rgba(128, 128, 128, 0.671);
+    font-weight: bold;
+}
+
+button:hover {
+    border: 2px solid black;
+    color: white;
+    background-color: gray;
+}
+
+.equal {
+    height: 52px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.bold {
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.849);
+    padding: 0%;
+    padding: 1px;
+}
