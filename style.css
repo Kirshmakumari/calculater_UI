@@ -3,6 +3,7 @@ body {
     align-items: center;
     display: flex;
     height: 100vh;
+    background-color: #222;
 }
 
 #maindiv {
@@ -14,6 +15,7 @@ body {
     width: 170px;
     height: 290px;
     padding-left: 8px;
+    background-color: white;
 }
 
 #div2 {
